@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Show/Hide & Toggle Demo</title>
+  <style>
+    .hidden {
+      display: none;
+    }
+    .highlight {
+      color: red;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <h2 id="heading">This is a heading</h2>
+  <p id="text">This is a sample paragraph that can be shown or hidden.</p>
+
+  <button onclick="toggleVisibility()">Show/Hide Paragraph</button>
+  <button onclick="toggleHighlight()">Toggle Highlight</button>
+
+  <script>
+    // Function to show/hide element
+    function toggleVisibility() {
+      let para = document.getElementById("text");
+      para.classList.toggle("hidden"); // adds/removes 'hidden' class
+    }
+
+    // Function to toggle CSS class dynamically
+    function toggleHighlight() {
+      let heading = document.getElementById("heading");
+      heading.classList.toggle("highlight"); // adds/removes 'highlight' class
+    }
+  </script>
+</body>
+</html>

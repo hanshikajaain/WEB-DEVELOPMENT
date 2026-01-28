@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Hyperlink Example</title>
+</head>
+<body>
+  <!--
+    Step 1: Purpose
+    - The <a> tag creates a hyperlink that users click to navigate to another URL,
+      download a file, or jump to a section within the same page.
+  -->
+  <!--
+    Step 2: Basic syntax with explanation (each attribute explained below the tag)
+    - <a href="URL" target="TARGET" title="TOOLTIP">Anchor Text</a>
+  -->
+  <!--
+    Step 3: Example link with nested explanatory comments
+    - href: specifies the destination URL the link points to (required for navigation)
+    - target: controls where the link opens; common values:
+        _self  -> same tab (default)
+        _blank -> new tab/window
+    - title: text shown as a tooltip on hover; helpful but not essential
+    - rel: relationship between current page and linked page; for security use rel="noopener noreferrer" when using target="_blank"
+    - Anchor Text: visible clickable text that should describe the link destination
+  -->
+  <p>
+    <!-- Example anchor -->
+    <a href="https://example.com/flowers" target="_blank" rel="noopener noreferrer" title="Learn about flowers">
+      Learn about flowers
+    </a>
+  </p>
+  <!--
+    Step 4: Internal page link (using id) example
+    - href="#section-id" jumps to an element with id="section-id" on the same page
+  -->
+  <p><a href="#flower-section">Go to Flower Section</a></p>
+
+  <!--
+    Step 5: Target section for internal link
+  -->
+  <h2 id="flower-section">Flower Section</h2>
+  <p>Details about flowers go here.</p>
+</body>
+</html>

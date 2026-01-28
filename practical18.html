@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>DOM Element Manipulation</title>
+</head>
+<body>
+  <h2>DOM Manipulation: Append, Remove, Modify</h2>
+
+  <div id="container">
+    <p>Initial paragraph inside container.</p>
+  </div>
+
+  <button onclick="addElement()">Add Element</button>
+  <button onclick="removeElement()">Remove Element</button>
+  <button onclick="modifyElement()">Modify Element</button>
+
+  <script>
+    // Append a new child node
+    function addElement() {
+      let newPara = document.createElement("p");
+      newPara.textContent = "New paragraph added!Java Script (JS) is a versatile, high-level programming language and a core technology of the World Wide Web, alongside HTML and CSS. It enables developers to create dynamic and interactive experiences on websites, such as animated graphics, interactive forms, and real-time content updates.  ";
+      document.getElementById("container").appendChild(newPara);
+    }
+
+    // Remove the last child node
+    function removeElement() {
+      let container = document.getElementById("container");
+      if (container.lastChild) {
+        container.removeChild(container.lastChild);
+      }
+    }
+
+    // Modify the first child node
+    function modifyElement() {
+      let container = document.getElementById("container");
+      if (container.firstChild) {
+        container.firstChild.textContent = "First paragraph modified!";
+      }
+    }
+  </script>
+</body>
+</html>

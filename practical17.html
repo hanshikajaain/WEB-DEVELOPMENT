@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Event Listener Demo</title>
+</head>
+<body>
+  <h2 id="heading">Press keys or click the button!</h2>
+  <button id="btn">Click Me</button>
+  <button id="removeBtn">Remove Click Listener</button>
+
+  <script>
+    // --- Mouse Event Listener ---
+    function sayHello() {
+      alert("Hello! You clicked the button.");
+    }
+
+    let button = document.getElementById("btn");
+    button.addEventListener("click", sayHello);
+
+    // Remove listener when "Remove Click Listener" button is pressed
+    document.getElementById("removeBtn").addEventListener("click", function() {
+      button.removeEventListener("click", sayHello);
+      alert("Click listener removed!");
+    });
+
+    // --- Keyboard Event Listener ---
+    document.addEventListener("keydown", function(event) {
+      let heading = document.getElementById("heading");
+      heading.innerHTML = "You pressed key: " + event.key;
+    });
+
+    document.addEventListener("keyup", function(event) {
+      console.log("Key released: " + event.key);
+    });
+  </script>
+</body>
+</html>

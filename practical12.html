@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Conditional & Loops Demo</title>
+</head>
+<body>
+  <h2>Conditional Statements and Loops in JavaScript</h2>
+  <p>Open the browser console to see the output.</p>
+
+  <script>
+    // --- Conditional Statements ---
+    let number = 5;
+
+    if (number > 0) {
+      console.log("The number is positive.");
+    } else if (number < 0) {
+      console.log("The number is negative.");
+    } else {
+      console.log("The number is zero.");
+    }
+
+    // --- For Loop ---
+    console.log("For loop demonstration:");
+    for (let i = 1; i <= 5; i++) {
+      console.log("Iteration " + i);
+    }
+
+    // --- While Loop ---
+    console.log("While loop demonstration:");
+    let j = 1;
+    while (j <= 3) {
+      console.log("Count: " + j);
+      j++;
+    }
+
+    // --- Do…While Loop ---
+    console.log("Do…while loop demonstration:");
+    let k = 1;
+    do {
+      console.log("Step: " + k);
+      k++;
+    } while (k <= 2);
+  </script>
+</body>
+</html>

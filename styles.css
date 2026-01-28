@@ -1,0 +1,33 @@
+* {
+  font-family: Georgia, serif;
+  margin: 0;
+  padding: 0;
+}
+
+.name {
+  color: darkblue;
+  font-size: 24px;
+}
+
+#da-vinci {
+  background-color: #f9f9f9;
+  border-left: 5px solid rgb(3, 84, 42);
+  padding: 15px;
+  margin: 20px;
+}
+
+#van-gogh {
+  background-color: #eef;
+  border-left: 5px solid navy;
+  padding: 15px;
+  margin: 20px;
+}
+
+.details p {
+  font-size: 14px;
+  color: #555;
+}
+
+.name, .painting {
+  margin-bottom: 10px;
+}

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Sports Hub</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(135deg, #001f3f, #0074D9);
+      color: #fff;
+    }
+
+    /* Header */
+    header {
+      background: #0074D9;
+      padding: 25px;
+      text-align: center;
+      font-size: 2.2em;
+      font-weight: bold;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+    }
+
+    /* Layout container */
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      margin: 20px;
+    }
+
+    /* Sidebar */
+    .sidebar {
+      background: #001f3f;
+      padding: 20px;
+      flex: 1 1 250px;
+      min-width: 250px;
+      box-shadow: inset 0 0 12px rgba(255,255,255,0.2);
+      font-size: 1.2em;
+    }
+
+    /* Content */
+    .content {
+      background: #fff;
+      color: #001f3f;
+      padding: 30px;
+      flex: 3 1 500px;
+      min-width: 400px;
+      box-shadow: 0 6px 18px rgba(0,0,0,0.4);
+      border-radius: 10px;
+      font-size: 1.2em;
+    }
+
+    /* Single sports card */
+    .sports-card {
+      background: #0074D9;
+      color: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      text-align: center;
+      transition: transform 0.3s ease;
+      font-size: 1.3em;
+      margin: 20px 0;
+    }
+    .sports-card:hover {
+      transform: scale(1.08);
+    }
+
+    /* Media Queries */
+    @media (max-width: 600px) {
+      .container {
+        flex-direction: column;
+      }
+      .sidebar, .content {
+        min-width: 100%;
+      }
+    }
+
+    @media (min-width: 600px) and (max-width: 900px) {
+      .container {
+        flex-direction: column;
+      }
+      .sidebar {
+        order: 1;
+      }
+      .content {
+        order: 2;
+      }
+    }
+
+    @media (min-width: 900px) {
+      .container {
+        flex-direction: row;
+      }
+      .sidebar {
+        max-width: 300px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>🏆 Sports Hub</header>
+  <div class="container">
+    <aside class="sidebar">
+      <h3>Sports</h3>
+      <ul>
+        <li>⚽ Football</li>
+        <li>🏀 Basketball</li>
+        <li>🏏 Cricket</li>
+        <li>🎾 Tennis</li>
+      </ul>
+    </aside>
+    <main class="content">
+      <h2>Highlight</h2>
+      <div class="sports-card">Match 1<br>Team A vs Team B</div>
+      <p>Clear updates and scores from your favorite sports!</p>
+    </main>
+  </div>
+</body>
+</html>

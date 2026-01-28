@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Canvas Drawing Demo</title>
+</head>
+<body>
+  <h2>Canvas Drawing Example</h2>
+  <canvas id="myCanvas" width="400" height="300" style="border:1px solid #000;"></canvas>
+
+  <script>
+    // Get canvas and context
+    let canvas = document.getElementById("myCanvas");
+    let ctx = canvas.getContext("2d");
+
+    // --- Draw Rectangle ---
+    ctx.fillStyle = "lightblue";   // fill color
+    ctx.fillRect(20, 20, 100, 60); // x, y, width, height
+
+    // --- Draw Circle ---
+    ctx.beginPath();
+    ctx.arc(250, 70, 40, 0, 2 * Math.PI); // x, y, radius, startAngle, endAngle
+    ctx.fillStyle = "orange";
+    ctx.fill();
+    ctx.stroke(); // outline
+
+    // --- Draw Triangle ---
+    ctx.beginPath();
+    ctx.moveTo(150, 200); // first point
+    ctx.lineTo(100, 280); // second point
+    ctx.lineTo(200, 280); // third point
+    ctx.closePath();
+    ctx.fillStyle = "green";
+    ctx.fill();
+    ctx.stroke();
+  </script>
+</body>
+</html>

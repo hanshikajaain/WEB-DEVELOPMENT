@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>IMG Tag Example</title>
+</head>
+<body>
+ <!--
+    Step 1: Purpose of the <img> tag
+    --------------------------------
+    - The <img> tag embeds an image into the web page.
+    - It is an empty (void) element — it does not have a closing tag.
+    - The browser needs attributes to locate and describe the image.
+  -->
+  <!--
+    Step 2: Example using important attributes
+    ------------------------------------------
+    - src     -> required; URL or file path to the image resource.
+    - alt     -> required for accessibility; text shown if image fails and read by screen readers.
+    - width   -> optional; sets display width in pixels (helps layout).
+    - height  -> optional; sets display height in pixels (helps layout).
+    - loading -> optional; "lazy" defers loading off-screen images to improve performance.
+  -->
+  <img
+    src="rose01.jpg"               <!-- src: path or URL of the image file -->
+    alt="Bright pink tulip"        <!-- alt: descriptive text for accessibility and fallback -->
+    width="100"                    <!-- width: displayed width in pixels -->
+    height="200"                   <!-- height: displayed height in pixels -->
+    loading="lazy"                 <!-- loading: "lazy" defers off-screen image loading -->
+  >
+  <!--
+    Step 3: Why these attributes matter
+    -----------------------------------
+    - src is mandatory for the browser to fetch and display the image.
+    - alt is critical for users who use screen readers or when images fail to load;
+      it also improves SEO and usability.
+    - width and height reserve layout space to avoid content shifts during load.
+    - loading="lazy" improves page load performance by delaying non-visible images.
+  -->
+</body>
+</html>

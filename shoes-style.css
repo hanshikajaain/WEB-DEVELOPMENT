@@ -1,0 +1,36 @@
+body {
+  font-family: Helvetica, sans-serif;
+  background-color: #f8f8f8;
+  padding: 2rem;
+}
+
+.brand {
+  background-color: white;
+  border: 2px solid #ddd;
+  margin-bottom: 1.5rem;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 0 6px rgba(0,0,0,0.1);
+}
+
+.name {
+  display: block;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: darkred;
+  margin-bottom: 0.5rem;
+}
+
+.type {
+  display: inline-block;
+  background-color: #eee;
+  padding: 0.3rem 0.6rem;
+  margin-right: 1rem;
+  border-radius: 4px;
+}
+
+.origin {
+  display: inline-block;
+  color: #555;
+  font-style: italic;
+}
